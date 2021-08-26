@@ -7,7 +7,7 @@
   bottom: 50px;
 }
 
-.heading {
+.text_white {
   color: white;
 }
 
@@ -17,8 +17,78 @@
   left: 0;
   width: 100%;
   z-index: -1;
-  max-height: 100vh;
+  min-height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.main {
+  min-height: 100vh;
+}
+
+.img-response {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.img-circle {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.my-card-img {
+  width: 100%;
+  margin: 10px auto 0;
+}
+
+.background-pattern {
+  background-image: url(../img/pattern.png);
+  background-repeat: repeat;
+}
+
+.price_old {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: line-through;
+  color: gray;
+  margin-bottom: 0;
+}
+
+.my-form__item {
+  position: relative;
+}
+
+.price_new {
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-animation-name: price-new;
+          animation-name: price-new;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes price-new {
+  0% {
+    color: #999;
+  }
+  100% {
+    color: #222222;
+    text-shadow: 0 0 4px #cab994;
+  }
+}
+
+@keyframes price-new {
+  0% {
+    color: #999;
+  }
+  100% {
+    color: #222222;
+    text-shadow: 0 0 4px #cab994;
+  }
 }
 /*# sourceMappingURL=style.css.map */
