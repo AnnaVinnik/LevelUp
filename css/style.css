@@ -1,4 +1,9 @@
-.btn-orange {
-  background-color: #ffcf33;
+.my-carousel-img,
+.my-carousel-title {
+  padding: 0 80px;
+}
+
+.my-carousel-indicators {
+  top: 310px;
 }
 /*# sourceMappingURL=style.css.map */
